@@ -7,9 +7,9 @@
   >
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#">Profile</a>
-      <a mat-list-item href="#">Projects</a>
-      <a mat-list-item href="#">Contact</a>
+      <a mat-list-item routerLink="/home" (click)="!drawer.toggle()">Home</a>
+      <a mat-list-item routerLink="/projects" (click)="!drawer.toggle()">Projects</a>
+      <a mat-list-item routerLink="contact" (click)="!drawer.toggle()">Contact</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -25,11 +25,11 @@
       <a class="mat-toolbar-link" href="#">Osvaldo</a>
       <span class="spacer"></span>
       <ng-container *ngIf="!(isHandset$ | async)">
-        <a href="#">Profile</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
+        <a routerLink="home">Home</a>
+        <a routerLink="/projects" (click)="!drawer.toggle()">Projects</a>
+        <a routerLink="contact" (click)="!drawer.toggle()">Contact</a>
       </ng-container>
     </mat-toolbar>
-    <app-home></app-home>
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
