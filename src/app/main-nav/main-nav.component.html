@@ -7,9 +7,9 @@
   >
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#">Link 1</a>
-      <a mat-list-item href="#">Link 2</a>
-      <a mat-list-item href="#">Link 3</a>
+      <a mat-list-item href="#">Profile</a>
+      <a mat-list-item href="#">Projects</a>
+      <a mat-list-item href="#">Contact</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -25,10 +25,11 @@
       <a class="mat-toolbar-link" href="#">Osvaldo</a>
       <span class="spacer"></span>
       <ng-container *ngIf="!(isHandset$ | async)">
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
+        <a href="#">Profile</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
       </ng-container>
     </mat-toolbar>
+    <app-home></app-home>
   </mat-sidenav-content>
 </mat-sidenav-container>

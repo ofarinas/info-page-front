@@ -1,0 +1,7 @@
+img.expand {
+  width: 10em !important;
+}
+img {
+  max-width:20%;
+  height:auto;
+}
