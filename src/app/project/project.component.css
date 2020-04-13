@@ -1,0 +1,13 @@
+
+div {
+  margin-right: 5%;
+  margin-left: 5%
+}
+
+@media (min-width: 700px) {
+  div {
+    margin-right: 15%;
+    margin-left: 15%
+  }
+
+}
