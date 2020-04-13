@@ -6,8 +6,17 @@ div {
 
 @media (min-width: 700px) {
   div {
-    margin-right: 15%;
-    margin-left: 15%
+    margin-right: 25%;
+    margin-left: 25%
   }
 
+}
+
+span {
+  position: relative;
+  float: right;
+}
+
+mat-panel-description {
+  display: unset;
 }
